@@ -1,0 +1,51 @@
+/*---------------
+    RESET
+---------------*/
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*---------------
+    COMMON
+---------------*/
+body {
+    background-color: black;
+}
+
+/*---------------
+    BUTTON
+---------------*/
+.btn {
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+.btn.btn-green {
+    color: #67d669;
+}
+
+/*---------------
+    HEADER
+---------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.col-header-left, .col-header-right {
+    width: 50%;
+    display: flex;
+    column-gap: 10px;
+}
+
+.col-header-right {
+    justify-content: flex-end;
+}
+
+.col-header-left .btn.btn-green {
+    margin-right: 5px;
+}
