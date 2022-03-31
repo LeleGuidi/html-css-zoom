@@ -12,6 +12,7 @@
 ---------------*/
 body {
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*---------------
@@ -34,12 +35,16 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 5px;
+    background-color: inherit;
+    height: 30px;
+    overflow: hidden;
 }
 
 .col-header-left, .col-header-right {
     width: 50%;
     display: flex;
     column-gap: 10px;
+    align-items: center;
 }
 
 .col-header-right {
@@ -48,4 +53,65 @@ header {
 
 .col-header-left .btn.btn-green {
     margin-right: 5px;
+}
+
+/*---------------
+    MAIN
+---------------*/
+.main-container {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    overflow: auto;
+}
+
+.users-connected {
+    width: calc(100% / 6 - 15px);
+    height: calc(100% / 6);
+    border-radius: 5px;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.users-name{
+    background-color: #39444b;
+    font-size: small;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+}
+
+.users-name i {
+    color: red;
+}
+
+.users-option {
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.users-option > * {
+    background-color: #3370e5;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.users-option i {
+    font-size: 15px;
 }
