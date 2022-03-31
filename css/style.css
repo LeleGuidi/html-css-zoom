@@ -28,6 +28,18 @@ body {
     color: #67d669;
 }
 
+.btn.btn-grey {
+    color: #a8a8a8;
+}
+
+.btn-red {
+    background-color: #a8352e;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    border: 0;
+}
+
 /*---------------
     HEADER
 ---------------*/
@@ -37,7 +49,6 @@ header {
     padding: 10px 5px;
     background-color: inherit;
     height: 30px;
-    overflow: hidden;
 }
 
 .col-header-left, .col-header-right {
@@ -65,7 +76,7 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 5px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     justify-content: center;
     overflow: auto;
 }
@@ -119,4 +130,38 @@ header {
 /*---------------
     FOOTER
 ---------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: #1b1b1b;
+    height: 70px;
+}
+
+.col-footer-left, .col-footer-middle, .col-footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.col-footer-left {
+ padding-left: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.size-25px {
+    font-size: 25px;
+}
+
+.col-footer-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
 
