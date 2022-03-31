@@ -101,7 +101,7 @@ header {
     display: flex;
     align-self: flex-end;
     align-items: flex-start;
-    gap: 3px;
+    gap: 1.5px;
 }
 
 .users-option > * {
@@ -115,3 +115,8 @@ header {
 .users-option i {
     font-size: 15px;
 }
+
+/*---------------
+    FOOTER
+---------------*/
+
